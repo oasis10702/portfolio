@@ -17,8 +17,8 @@
 /*-------------------------*/
 /* $Font import 
 ---------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*-------------------------*/
 /* $Reset 
 ---------------------------*/
@@ -313,9 +313,9 @@ html [type="button"], /* 1 */
  */
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -325,9 +325,9 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -378,8 +378,8 @@ textarea {
  * 2. Remove the padding in IE 10-.
  */
 
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -388,8 +388,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -398,7 +398,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -407,8 +407,8 @@ textarea {
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -482,22 +482,22 @@ template {
 /*-------------------------*/
 /* $Color 
 
-1.6D98BA
-2.D3B99F
-3.#C17767
-4.9AADBF
-5.#DBD3AD
+1.70C1B3
+2.3D5467
+3.#D4ADCF
+4.686963
+5.FFE066
 
 ---------------------------*/
 /* background color */
 .bg-color-primary {
-  background-color: #6d98ba;
+  background-color: #70c1b3;
 }
 .bg-color-secondary {
-  background-color: #c17767;
+  background-color: #d4adcf;
 }
 .bg-color-black {
-  background-color: #210203;
+  background-color: #686963;
 }
 .bg-color-grey {
   background-color: #cbcbcb;
@@ -508,13 +508,13 @@ template {
 
 /* text color */
 .color-primary {
-  color: #6d98ba;
+  color: #70c1b3;
 }
 .color-secondary {
   color: #d3b99f;
 }
 .color-black {
-  color: #464646;
+  color: #686963;
 }
 .color-grey {
   color: #cbcbcb;
@@ -529,7 +529,7 @@ template {
 /* Globel */
 body,
 html {
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
 }
 /* heading */
 h1,
@@ -539,35 +539,36 @@ h4,
 h5,
 h6 {
   margin: 0;
-  /* color: #464646; */
+  /* color: #686963; */
 }
 h1 {
   font-size: 80px;
   font-weight: 800;
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
 h2 {
   font-size: 48px;
   font-weight: 600;
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
-  color: #210203;
+  color: #686963;
 }
 h3 {
   font-size: 40px;
   font-weight: 600;
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
   line-height: 48px;
   margin-top: 24px;
   margin-bottom: 24px;
+  color: #686963;
 }
 h4 {
   font-size: 24px;
   font-weight: 600;
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
 
   line-height: 32px;
   margin-top: 24px;
@@ -576,7 +577,7 @@ h4 {
 h5 {
   font-size: 20px;
   font-weight: 400;
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
 
   line-height: 1;
   margin-top: 24px;
@@ -585,7 +586,7 @@ h5 {
 h6 {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
 
   line-height: 32px;
   margin-top: 24px;
@@ -594,7 +595,7 @@ h6 {
 p {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Kosugi Maru", "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
   line-height: 32px;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -602,19 +603,19 @@ p {
 .subtitle {
   font-size: 48px;
   font-weight: 900;
-  font-family: "Kosugi Maru", "Helvetica", "roboto", arial, sans-serif;
+  font-family: 'Helvetica', 'roboto', arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
 /* link */
 a {
-  color: #464646;
+  color: #686963;
   text-decoration: none;
 }
 a:hover,
 a:active,
 a:fucus {
-  color: #464646;
+  color: #686963;
   text-decoration: none;
 }
 /* list */
@@ -628,13 +629,11 @@ ul {
 /* $Icons 
 ---------------------------*/
 @font-face {
-  font-family: "fontello";
-  src: url("../font/fontello.eot?69767769");
-  src: url("../font/fontello.eot?69767769#iefix") format("embedded-opentype"),
-    url("../font/fontello.woff2?69767769") format("woff2"),
-    url("../font/fontello.woff?69767769") format("woff"),
-    url("../font/fontello.ttf?69767769") format("truetype"),
-    url("../font/fontello.svg?69767769#fontello") format("svg");
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?25085816');
+  src: url('../font/fontello.eot?25085816#iefix') format('embedded-opentype'),
+    url('../font/fontello.woff2?25085816') format('woff2'), url('../font/fontello.woff?25085816') format('woff'),
+    url('../font/fontello.ttf?25085816') format('truetype'), url('../font/fontello.svg?25085816#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -644,17 +643,17 @@ ul {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?69767769#fontello') format('svg');
+    src: url('../font/fontello.svg?25085816#fontello') format('svg');
   }
 }
 */
 
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: "fontello";
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
-  /* speak: none; */
+  speak: never;
 
   display: inline-block;
   text-decoration: inherit;
@@ -685,73 +684,18 @@ ul {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-github:before {
-  content: "\e800";
-} /* '' */
-.icon-mail:before {
-  content: "\e801";
-} /* '' */
-.icon-search:before {
-  content: "\e802";
-} /* '' */
-.icon-phone:before {
-  content: "\e803";
-} /* '' */
-.icon-heart:before {
-  content: "\e804";
-} /* '' */
-.icon-language:before {
-  content: "\e805";
-} /* '' */
-.icon-twitter:before {
-  content: "\f099";
-} /* '' */
-.icon-facebook:before {
-  content: "\f09a";
-} /* '' */
+.icon-news:before {
+  content: '\e808';
+} /* '���' */
+.icon-linkedin:before {
+  content: '\f05c';
+} /* '���' */
 .icon-github-circled:before {
-  content: "\f09b";
-} /* '' */
-.icon-mail-alt:before {
-  content: "\f0e0";
-} /* '' */
-.icon-quote-left:before {
-  content: "\f10d";
-} /* '' */
-.icon-quote-right:before {
-  content: "\f10e";
-} /* '' */
-.icon-thumbs-up-alt:before {
-  content: "\f164";
-} /* '' */
-.icon-youtube:before {
-  content: "\f167";
-} /* '' */
-.icon-youtube-play:before {
-  content: "\f16a";
-} /* '' */
-.icon-skype:before {
-  content: "\f17e";
-} /* '' */
-.icon-wechat:before {
-  content: "\f1d7";
-} /* '' */
-.icon-paper-plane:before {
-  content: "\f1d8";
-} /* '' */
-.icon-twitch:before {
-  content: "\f1e8";
-} /* '' */
-.icon-commenting-o:before {
-  content: "\f27b";
-} /* '' */
-.icon-facebook-squared:before {
-  content: "\f308";
-} /* '' */
-.icon-linkedin-squared:before {
-  content: "\f30c";
-} /* '' */
-
+  content: '\f09b';
+} /* '���' */
+.icon-behance:before {
+  content: '\f34e';
+} /* '���' */
 /*-------------------------*/
 /* $Utility 
 ---------------------------*/
